@@ -17,6 +17,7 @@
 		638D2A9126D9771400071441 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638D2A9026D9771400071441 /* NetworkManager.swift */; };
 		638D2A9326D98AFB00071441 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638D2A9226D98AFB00071441 /* CommentsViewController.swift */; };
 		638D2A9826D9930900071441 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638D2A9726D9930900071441 /* CommentTableViewCell.swift */; };
+		638D2A9A26D99A8000071441 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638D2A9926D99A8000071441 /* Comment.swift */; };
 		63CCF92326D941CF00364858 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF92226D941CF00364858 /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		638D2A9026D9771400071441 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		638D2A9226D98AFB00071441 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		638D2A9726D9930900071441 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		638D2A9926D99A8000071441 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		63CCF92226D941CF00364858 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 			children = (
 				6372D28326D70CB900135F13 /* Post.swift */,
 				638D2A9026D9771400071441 /* NetworkManager.swift */,
+				638D2A9926D99A8000071441 /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				636282AF26D46735009342C4 /* AppDelegate.swift in Sources */,
 				63CCF92326D941CF00364858 /* PostTableViewCell.swift in Sources */,
 				636282B126D46735009342C4 /* SceneDelegate.swift in Sources */,
+				638D2A9A26D99A8000071441 /* Comment.swift in Sources */,
 				6372D28426D70CB900135F13 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
