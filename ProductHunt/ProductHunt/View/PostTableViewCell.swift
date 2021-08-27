@@ -25,6 +25,7 @@ class PostTableViewCell: UITableViewCell {
             taglineLabel.text = post.tagline
             commentsCountLabel.text = "Comments: \(post.commentsCount)"
             votesCountLabel.text = "Votes: \(post.votesCount)"
+            previewImageView.load(url: post.previewImageURL)
             // We'll write this next!
             updatePreviewImage()
         }
@@ -38,4 +39,18 @@ class PostTableViewCell: UITableViewCell {
     }
     
     
+}
+
+extension UIImageView {
+    func load(url: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
 }
