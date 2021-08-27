@@ -119,6 +119,77 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="93.75"/>
         </scene>
+        <!--Comments View Controller-->
+        <scene sceneID="hgd-7H-akF">
+            <objects>
+                <viewController storyboardIdentifier="commentsView" id="KR0-fm-WCx" customClass="CommentsViewController" customModule="ProductHunt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U2Y-ei-61H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LZZ-VA-etf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="commentCell" rowHeight="125" id="4TS-sX-NLM" customClass="CommentTableViewCell" customModule="ProductHunt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="125"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4TS-sX-NLM" id="0V3-wm-68f">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWU-ZP-iSd">
+                                                    <rect key="frame" x="20" y="11" width="374" height="103"/>
+                                                    <subviews>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SJN-KU-W7a">
+                                                            <rect key="frame" x="15" y="15" width="344" height="73"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                            <color key="textColor" systemColor="labelColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="SJN-KU-W7a" firstAttribute="top" secondItem="WWU-ZP-iSd" secondAttribute="top" constant="15" id="VHP-yV-XJQ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="SJN-KU-W7a" secondAttribute="trailing" constant="15" id="eex-Qh-qdK"/>
+                                                        <constraint firstItem="SJN-KU-W7a" firstAttribute="leading" secondItem="WWU-ZP-iSd" secondAttribute="leading" constant="15" id="nI3-5T-N2Z"/>
+                                                        <constraint firstAttribute="bottom" secondItem="SJN-KU-W7a" secondAttribute="bottom" constant="15" id="ylz-hG-9qO"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="WWU-ZP-iSd" secondAttribute="bottom" id="5Cd-Xd-Pnd"/>
+                                                <constraint firstItem="WWU-ZP-iSd" firstAttribute="leading" secondItem="0V3-wm-68f" secondAttribute="leadingMargin" id="HLH-tp-gOi"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="WWU-ZP-iSd" secondAttribute="trailing" id="LSI-2i-Ea7"/>
+                                                <constraint firstItem="WWU-ZP-iSd" firstAttribute="top" secondItem="0V3-wm-68f" secondAttribute="topMargin" id="RdJ-lO-8Pr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentTextView" destination="SJN-KU-W7a" id="5Jd-Qa-LQe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SN4-8U-QFh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LZZ-VA-etf" firstAttribute="leading" secondItem="SN4-8U-QFh" secondAttribute="leading" id="Xgi-eP-Bey"/>
+                            <constraint firstItem="LZZ-VA-etf" firstAttribute="top" secondItem="SN4-8U-QFh" secondAttribute="top" id="cPD-Ul-HVc"/>
+                            <constraint firstItem="SN4-8U-QFh" firstAttribute="bottom" secondItem="LZZ-VA-etf" secondAttribute="bottom" id="rLw-dZ-6Ot"/>
+                            <constraint firstItem="SN4-8U-QFh" firstAttribute="trailing" secondItem="LZZ-VA-etf" secondAttribute="trailing" id="wQE-1j-4Sc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commentsTableView" destination="LZZ-VA-etf" id="juD-kW-w8Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1FG-CN-Wz3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1878" y="94"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="KEz-Xv-PdL">
             <objects>
@@ -140,6 +211,9 @@
     </scenes>
     <resources>
         <image name="placeholder" width="350" height="160"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

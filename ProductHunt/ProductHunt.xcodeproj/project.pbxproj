@@ -15,6 +15,8 @@
 		636282BB26D46736009342C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636282B926D46736009342C4 /* LaunchScreen.storyboard */; };
 		6372D28426D70CB900135F13 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6372D28326D70CB900135F13 /* Post.swift */; };
 		638D2A9126D9771400071441 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638D2A9026D9771400071441 /* NetworkManager.swift */; };
+		638D2A9326D98AFB00071441 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638D2A9226D98AFB00071441 /* CommentsViewController.swift */; };
+		638D2A9826D9930900071441 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638D2A9726D9930900071441 /* CommentTableViewCell.swift */; };
 		63CCF92326D941CF00364858 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF92226D941CF00364858 /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		636282BC26D46736009342C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6372D28326D70CB900135F13 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		638D2A9026D9771400071441 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		638D2A9226D98AFB00071441 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		638D2A9726D9930900071441 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		63CCF92226D941CF00364858 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,16 +68,42 @@
 			children = (
 				636282AE26D46735009342C4 /* AppDelegate.swift */,
 				636282B026D46735009342C4 /* SceneDelegate.swift */,
-				636282B226D46735009342C4 /* FeedViewController.swift */,
-				63CCF92226D941CF00364858 /* PostTableViewCell.swift */,
-				6372D28326D70CB900135F13 /* Post.swift */,
-				638D2A9026D9771400071441 /* NetworkManager.swift */,
-				636282B426D46735009342C4 /* Main.storyboard */,
+				638D2A9426D98B0500071441 /* Model */,
+				638D2A9526D98B0F00071441 /* View */,
+				638D2A9626D98B1C00071441 /* Controller */,
 				636282B726D46736009342C4 /* Assets.xcassets */,
 				636282B926D46736009342C4 /* LaunchScreen.storyboard */,
 				636282BC26D46736009342C4 /* Info.plist */,
 			);
 			path = ProductHunt;
+			sourceTree = "<group>";
+		};
+		638D2A9426D98B0500071441 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6372D28326D70CB900135F13 /* Post.swift */,
+				638D2A9026D9771400071441 /* NetworkManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		638D2A9526D98B0F00071441 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				636282B426D46735009342C4 /* Main.storyboard */,
+				63CCF92226D941CF00364858 /* PostTableViewCell.swift */,
+				638D2A9726D9930900071441 /* CommentTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		638D2A9626D98B1C00071441 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				636282B226D46735009342C4 /* FeedViewController.swift */,
+				638D2A9226D98AFB00071441 /* CommentsViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +178,8 @@
 			files = (
 				638D2A9126D9771400071441 /* NetworkManager.swift in Sources */,
 				636282B326D46735009342C4 /* FeedViewController.swift in Sources */,
+				638D2A9326D98AFB00071441 /* CommentsViewController.swift in Sources */,
+				638D2A9826D9930900071441 /* CommentTableViewCell.swift in Sources */,
 				636282AF26D46735009342C4 /* AppDelegate.swift in Sources */,
 				63CCF92326D941CF00364858 /* PostTableViewCell.swift in Sources */,
 				636282B126D46735009342C4 /* SceneDelegate.swift in Sources */,
